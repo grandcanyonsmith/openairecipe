@@ -2,8 +2,10 @@ import time
 import os
 import openai
 
+from new_topic_deep_dive import main
+
 # API key for OpenAI
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Get topic from user
 topic = input("Enter a topic: ")
@@ -255,3 +257,7 @@ def generate_key_strategies_and_skills(topic, selected_ingredients):
     print(generate_key_skills(topic))
 
 generate_key_strategies_and_skills(topic, selected_ingredients)
+
+
+# if __name__ == "__main__":
+#     generate_goals()
